@@ -73,7 +73,7 @@ decorator = "5.0.9"
 atari-py = "0.2.9"
 ale-py = "0.7.5"
 importlib-metadata = "4.13.0"
-gym = {version="0.24.0", extras=["atari", "accept-rom-license"]}
+gym = {version="0.25.2", extras=["atari", "accept-rom-license"]}
 
 [tool.poetry.group.images.dependencies]
 scikit-image = "0.19.3"
