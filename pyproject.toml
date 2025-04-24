@@ -65,6 +65,8 @@ tensorboard = "2.14.1"
 
 [tool.poetry.group.book.dependencies]
 pycocotools = "2.0.8"
+networkx = "2.8.5"
+pyyaml = "6.0.2"
 
 [tool.poetry.group.huggingface.dependencies]
 accelerate= "0.25.0"
