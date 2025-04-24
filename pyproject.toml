@@ -70,10 +70,15 @@ networkx = "2.8.5"
 pyyaml = "6.0.2"
 portalocker = "2.10.1"
 decorator = "5.0.9"
+atari-py = "0.2.9"
+ale-py = "0.7.5"
+importlib-metadata = "4.13.0"
+gym = {version="0.24.0", extras=["atari", "accept-rom-license"]}
 
 [tool.poetry.group.images.dependencies]
 scikit-image = "0.19.3"
 pillow = "10.2.0"
+opencv-python = "4.6.0.66"
 
 [tool.poetry.group.huggingface.dependencies]
 huggingface_hub = "0.20.2"
