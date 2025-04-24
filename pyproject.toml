@@ -62,6 +62,9 @@ tensorflow-cpu = "2.14.1"
 [tool.poetry.group.tensorboard.dependencies]
 tensorboard = "2.14.1"
 
+[tool.poetry.group.book.dependencies]
+pycocotools = "2.0.8"
+
 [tool.poetry.group.dev.dependencies]
 flake8 = "7.1.1"
 
