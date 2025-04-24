@@ -55,6 +55,7 @@ notebook-list:
 env-init-conda:
 	@conda create --yes --copy --name "$(CONDA_ENV_NAME)" \
 		python=3.10.16 \
+		graphviz=2.50.0 \
 		nvidia::cuda-toolkit=12.4.1 \
 		conda-forge::poetry=1.8.5
 
