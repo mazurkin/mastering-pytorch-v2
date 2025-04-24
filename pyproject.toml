@@ -53,6 +53,7 @@ torchaudio = { version = "2.2.2+cu121", source="pytorch"}
 torchvision = { version = "0.17.2+cu121", source="pytorch"}
 torchdata = { version = "0.7.1", source="pytorch"}
 torchtext = "0.17.2"
+torch-geometric = "2.3.1"
 
 [tool.poetry.group.pytorch-utils.dependencies]
 torchviz = "0.0.3"
@@ -68,6 +69,7 @@ pycocotools = "2.0.8"
 networkx = "2.8.5"
 pyyaml = "6.0.2"
 portalocker = "2.10.1"
+decorator = "5.0.9"
 
 [tool.poetry.group.huggingface.dependencies]
 accelerate= "0.25.0"

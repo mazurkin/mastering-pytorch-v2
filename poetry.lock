@@ -850,13 +850,13 @@ files = [
 
 [[package]]
 name = "decorator"
-version = "5.2.1"
+version = "5.0.9"
 description = "Decorators for Humans"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.5"
 files = [
-    {file = "decorator-5.2.1-py3-none-any.whl", hash = "sha256:d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a"},
-    {file = "decorator-5.2.1.tar.gz", hash = "sha256:65f266143752f734b0a7cc83c46f4618af75b8c5911b00ccb61d0ac9b6da0360"},
+    {file = "decorator-5.0.9-py3-none-any.whl", hash = "sha256:6e5c199c16f7a9f0e3a61a4a54b3d27e7dad0dbdde92b944426cb20914376323"},
+    {file = "decorator-5.0.9.tar.gz", hash = "sha256:72ecfba4320a893c53f9706bebb2d55c270c1e51a28789361aa93e4a21319ed5"},
 ]
 
 [[package]]
@@ -5169,6 +5169,34 @@ url = "https://download.pytorch.org/whl/cu121"
 reference = "pytorch"
 
 [[package]]
+name = "torch-geometric"
+version = "2.3.1"
+description = "Graph Neural Network Library for PyTorch"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "torch_geometric-2.3.1.tar.gz", hash = "sha256:454fd0bbc128a17a4b9d15010ba9f66d48ec8cd7277991b888a7770263fa125d"},
+]
+
+[package.dependencies]
+jinja2 = "*"
+numpy = "*"
+psutil = ">=5.8.0"
+pyparsing = "*"
+requests = "*"
+scikit-learn = "*"
+scipy = "*"
+tqdm = "*"
+
+[package.extras]
+benchmark = ["matplotlib", "networkx", "pandas", "protobuf (<4.21)", "wandb"]
+dev = ["onnx", "onnxruntime", "pre-commit", "pytest", "pytest-cov"]
+full = ["ase", "captum", "graphviz", "h5py", "huggingface_hub", "hydra-core", "matplotlib", "networkx", "numba", "opt_einsum", "pandas", "pgmpy", "protobuf (<4.21)", "pytorch-lightning", "pytorch-memlab", "rdflib", "scikit-image", "statsmodels", "sympy", "tabulate", "torchmetrics", "trimesh", "yacs"]
+graphgym = ["hydra-core", "protobuf (<4.21)", "pytorch-lightning", "yacs"]
+modelhub = ["huggingface_hub"]
+test = ["onnx", "onnxruntime", "pytest", "pytest-cov"]
+
+[[package]]
 name = "torchaudio"
 version = "2.2.2+cu121"
 description = "An audio package for PyTorch"
@@ -6054,4 +6082,4 @@ test = ["mypy", "pre-commit", "pytest", "pytest-asyncio", "websockets (>=10.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.16"
-content-hash = "e35e9afc0cf42f3b733ea3e0a25abd9876fc607f1cd047339ef6b5bb0904c309"
+content-hash = "03ae9663b71768c35b97d4900bb82a43631ab579c5c671a15632fa4f24219028"
