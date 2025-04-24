@@ -65,6 +65,13 @@ tensorboard = "2.14.1"
 [tool.poetry.group.book.dependencies]
 pycocotools = "2.0.8"
 
+[tool.poetry.group.huggingface.dependencies]
+accelerate= "0.25.0"
+transformers = "4.36.0"
+datasets = "2.3.2"
+optimum = "1.16.1"
+huggingface_hub = "0.20.1"
+
 [tool.poetry.group.dev.dependencies]
 flake8 = "7.1.1"
 
