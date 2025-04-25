@@ -1978,6 +1978,22 @@ test = ["jaraco.test (>=5.4)", "pytest (>=6,!=8.1.*)", "zipp (>=3.17)"]
 type = ["pytest-mypy"]
 
 [[package]]
+name = "ipdb"
+version = "0.13.13"
+description = "IPython-enabled pdb"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "ipdb-0.13.13-py3-none-any.whl", hash = "sha256:45529994741c4ab6d2388bfa5d7b725c2cf7fe9deffabdb8a6113aa5ed449ed4"},
+    {file = "ipdb-0.13.13.tar.gz", hash = "sha256:e3ac6018ef05126d442af680aad863006ec19d02290561ac88b8b1c0b0cfc726"},
+]
+
+[package.dependencies]
+decorator = {version = "*", markers = "python_version > \"3.6\" and python_version < \"3.11\""}
+ipython = {version = ">=7.31.1", markers = "python_version > \"3.6\" and python_version < \"3.11\""}
+tomli = {version = "*", markers = "python_version > \"3.6\" and python_version < \"3.11\""}
+
+[[package]]
 name = "ipykernel"
 version = "6.29.5"
 description = "IPython Kernel for Jupyter"
@@ -3184,13 +3200,13 @@ files = [
 
 [[package]]
 name = "nbclassic"
-version = "1.2.0"
+version = "1.3.0"
 description = "Jupyter Notebook as a Jupyter Server extension."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.9"
 files = [
-    {file = "nbclassic-1.2.0-py3-none-any.whl", hash = "sha256:61cc3612dae9d418d6c3577f7c6d8dad1d6a81b68e7a12585483283d5c92ec37"},
-    {file = "nbclassic-1.2.0.tar.gz", hash = "sha256:736ec50483a54485971db213be9207e34e51fc144c78343625b69917423644ba"},
+    {file = "nbclassic-1.3.0-py3-none-any.whl", hash = "sha256:007e816187ed0ad5f165077ccfbcf60e271efe5949281b682e228436ff80afeb"},
+    {file = "nbclassic-1.3.0.tar.gz", hash = "sha256:1ae3b30a4d051332559b6d0eaba34c20ada51a73c95a7f35954c126e6a5c80fd"},
 ]
 
 [package.dependencies]
@@ -3200,6 +3216,7 @@ nest-asyncio = ">=1.5"
 notebook-shim = ">=0.2.3"
 
 [package.extras]
+dev = ["hatch", "pre-commit"]
 docs = ["myst-parser", "nbsphinx", "sphinx", "sphinx-rtd-theme", "sphinxcontrib-github-alt"]
 json-logging = ["json-logging"]
 test = ["coverage", "nbval", "pytest", "pytest-cov", "pytest-jupyter", "pytest-playwright", "pytest-tornasync", "requests", "requests-unixsocket", "testpath"]
@@ -7416,4 +7433,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.16"
-content-hash = "c187152c53a95035723d96150ac0833ba7f3c7c25b35c4c9648a6e1e28d8b22c"
+content-hash = "c443e0f89ad71060ac706f717779a09fa7eb1202b6e243aac72e5ae1daa3f881"
